@@ -3,7 +3,7 @@
 These materials were prepared for the [4th ArcTrain Annual Meeting](https://www.marum.de/en/education-career/ArcTrain-2/Annual-Meeting-2017.html). The course was first held on September 12 and 13, 2017 and is structured three blocks of lectures and exercises. The schedule is as follows:
   
 
-09:00 - 09:15 Welcome and overview  
+09:00 - 09:15 Welcome and Overview  
 09:15 - 09:45 Lecture: Research Data and Data Management Planning  
 09:45 - 10:15 Exercise: Write a Data Management Plan with DMPonline  
 10:15 - 10:30 Break  
@@ -14,23 +14,27 @@ These materials were prepared for the [4th ArcTrain Annual Meeting](https://www.
 12:15 - 12:45 Exercise: Archive Data with figshare and PANGAEA  
 12:45 - 13:00 Closing, final questions and comments
 
-## Lecture I: Research Data and Data Management Planning
+## Welcome and Overview
+
+Provides an [outline for the course](lectures/lecture-0/stocker17rdm101-lecture-0.pdf).
+
+## Lecture: Research Data and Data Management Planning
 
 What are data and research data, Types, Metadata, Lifecycle, Formats, Standards Data, Management, Management plan, Planning tools, ...
 
-## Exercise I: Creating a Data Management Plan with DMPonline
+## Exercise: Creating a Data Management Plan with DMPonline
 
-## Lecture II: Working with Research Data
+## Lecture: Working with Research Data
 
 Access, Transformations, Versioning, Storing, Databases, Backup, ...
 
-## Exercise II: Versioning Data with GitHub
+## Exercise: Versioning Data with GitHub
 
-## Lecture III: Sharing and Archiving Research Data
+## Lecture: Sharing and Archiving Research Data
 
 Benefits, Challenges, Identification, Citation, Repositories, Quality, Preservation, Discovery, ...
 
-## Exercise III: Archiving data with figshare and PANGAEA
+## Exercise: Archiving data with figshare and PANGAEA
 
 ## Closing
 
