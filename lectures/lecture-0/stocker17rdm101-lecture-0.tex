@@ -1,0 +1,116 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usecolortheme{sidebartab}
+
+%gets rid of bottom navigation bars
+%\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\beamertemplatenavigationsymbolsempty
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+\usepackage{hyperref}
+\usepackage{showexpl} 
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage[version=3]{mhchem}
+\usepackage{chemfig}
+\usepackage{changes}
+\usepackage{booktabs}
+
+
+\lstloadlanguages{[LaTeX]Tex} 
+\lstset{% 
+     basicstyle=\ttfamily\large, 
+     commentstyle=\itshape\ttfamily, 
+     showspaces=false, 
+     showstringspaces=false, 
+     breaklines=true, 
+     breakautoindent=false, 
+     captionpos=t,
+     explpreset={numbers=none},
+     pos=b
+} 
+
+\title{Research Data Management}
+\author{Markus Stocker}
+\date{September 12, 2017}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+  \frametitle{Outline Lectures}
+  
+  \begin{itemize}
+  \item Research data and data management planning
+  \begin{itemize}
+  \item What are research data
+  \item Research data lifecycle
+  \item Data types, formats, and standards
+  \item Metadata
+  \item Data management, plans and planning tools
+  \end{itemize}
+  \item Working with research data
+  \begin{itemize}
+  \item Access to research data
+  \item Data transformations
+  \item Data storing and databases
+  \item Versioning and backup
+  \end{itemize}
+  \item Sharing and archiving research data
+  \begin{itemize}
+  \item Benefits and challenges
+  \item Data identification and citation
+  \item Data repositories
+  \end{itemize}
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline Exercises}
+  
+  \begin{itemize}
+  \item Write a data management plan with DMPonline
+  \item Versioning data with GitHub
+  \item Archive data with figshare and PANGAEA
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Schedule}
+  \small
+  \begin{center}
+  \begin{tabular}{llp{7cm}}
+  09:00 - 09:15 & \multicolumn{2}{l}{Welcome and overview} \\
+  & & \\	
+  Part I & \\	
+  \hline
+  09:15 - 09:45 & Lecture & Research Data and Data Management Planning \\
+  09:45 - 10:15 & Exercise & Write a Data Management Plan with DMPonline \\ 
+  10:15 - 10:30 & Break & \\
+  & & \\
+  Part II & \\
+  \hline 
+  10:30 - 11:00 & Lecture & Working with Research Data \\
+  11:00 - 11:30 & Exercise & Versioning Data with GitHub \\
+  11:30 - 11:45 & Break & \\
+  & & \\
+  Part III & \\
+  \hline 
+  11:45 - 12:15 & Lecture & Sharing and Archiving Research Data \\
+  12:15 - 12:45 & Exercise & Archive Data with figshare and PANGAEA \\
+  12:45 - 13:00 & Closing & Final questions and comments \\
+  \end{tabular}
+  \end{center}
+\end{frame}
+
+\end{document}
