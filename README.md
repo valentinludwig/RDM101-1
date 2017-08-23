@@ -20,7 +20,7 @@ Provides an [outline for the course](lectures/lecture-0/stocker17rdm101-lecture-
 
 ## Lecture: Research Data and Data Management Planning
 
-What are data and research data, Types, Metadata, Lifecycle, Formats, Standards Data, Management, Management plan, Planning tools, ...
+The [first lecture](lectures/lecture-I/stocker17rdm101-lecture-I.pdf) introduces the notions of data, from abstract definitions to more practical ones. We looks at research data lifecycles and various data types, approaches to format and model data, as well as standardization of formats and models. We discuss the distinction between data and metadata. Finally, we introduce to data management and tools that can support you with planning.
 
 ## Exercise: Creating a Data Management Plan with DMPonline
 
