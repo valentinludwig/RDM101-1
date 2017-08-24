@@ -5,11 +5,16 @@
 \usepackage{hyperref}
 \usepackage{showexpl} 
 \usepackage{graphicx}
+\usepackage{tikz}
 \usepackage{color}
 \usepackage{siunitx}
 \usepackage[version=3]{mhchem}
 \usepackage{chemfig}
 \usepackage{changes}
+\usepackage[many]{tcolorbox}
+\usepackage{natbib}
+\bibliographystyle{unsrtnat}
+\setcitestyle{square,numbers}
 
 \beamertemplatenavigationsymbolsempty
 \setbeamertemplate{footline}{}
@@ -27,6 +32,19 @@
      explpreset={numbers=none},
      pos=b
 } 
+
+\newtcolorbox{titlebox}[1][]{
+	width=1.2\textwidth,
+	boxrule=0pt,
+	leftrule=0pt,
+	rightrule=0pt,
+	toprule=0pt,
+	bottomrule=0pt,
+	arc=0pt,
+	colback=yellow!20,
+	opacityback=0.7,
+	enhanced jigsaw
+}
 
 \title{Research Data and Data Management Planning}
 \author{Markus Stocker}
@@ -48,7 +66,22 @@
   \end{itemize}
 \end{frame}
 
-% Datum is ultimately reducible to a lack of uniformity, between signals, symbols
+% Joan Miro (1968). Landscape. Acrylic on canvas
+% Essentially a white canvas with a colored dot
+% It makes for a good example for what a datum is, at least for philosophers
+{
+	\usebackgroundtemplate{ %
+		\begin{tikzpicture}[remember picture, overlay]%
+		\node at (current page.center) {\includegraphics[height=\paperheight]{graphics/joan-miro-landscape-1968.jpg}};%
+		\end{tikzpicture}%
+	}%
+	\setbeamertemplate{navigation symbols}{}
+	\begin{frame}[plain]
+	\end{frame}
+}
+
+% Datum is ultimately reducible to a lack of uniformity (between signals, symbols, ...)
+% That's the reason why lights used to signal emergency flash
 % Data depend on the occurrence of differences
 % Defined as x being distinct from y
 % Where x, y are uninterpreted (typed) variables
@@ -62,22 +95,64 @@
 	}%
 	\setbeamertemplate{navigation symbols}{}
 	\begin{frame}[plain]
+	\vspace{6cm}
+			\begin{tikzpicture}
+				\hspace{-0.55cm}
+				\node {
+					\begin{titlebox}
+						\large Datum is ultimately reducible to a lack of uniformity \cite{floridi11philosophy}
+					\end{titlebox}
+				};
+			\end{tikzpicture}
 	\end{frame}
 }
 
 \begin{frame}
-  \frametitle{Data}
+  \frametitle{Define data}
   
   \begin{itemize}
-  \item 
+  \item Entities, physical or digital, used as evidence of phenomena \cite{borgman15big}
+  \item A reinterpretable representation of information \cite{ccsds12oais}
+  \item ...
+  \item There is no consensus definition
+  \item Even institutions that curate data may not define what they curate
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Research data}
+  \frametitle{Data examples}
   
   \begin{itemize}
-  \item 
+  \item Not just spreadsheets of numbers, also
+  \item Sequences of bits
+  \item Characters on a page
+  \item Recording of sounds
+  \item Physical and biological specimens
+  \item Images
+  \item Software
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Define research data}
+  
+  \begin{itemize}
+  \item Unsurprisingly, there is no consensus on the definition
+  \item Factual material [...] necessary to validate research findings \cite{epsrc17researchdata}
+  \item Everything needed to reproduce a given scientific output \cite{surkis15researchdata}
+  \item ...
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Research data examples}
+  
+  \begin{itemize}
+  \item In addition to the obvious, e.g. data files
+  \item Notebooks, e.g. laboratory, field, diaries, ...
+  \item Questionnaires, audio and video tapes
+  \item Models and scripts
+  \item Workflows and protocols
   \end{itemize}
 \end{frame}
 
@@ -89,6 +164,7 @@
   \end{itemize}
 \end{frame}
 
+% http://www2.le.ac.uk/services/research-data/documents/UoL_ReserchDataDefinitions_20120904.pdf
 \begin{frame}
   \frametitle{Data types}
   
@@ -161,7 +237,6 @@
 \begin{frame}
   \frametitle{References}
   \tiny
-  \bibliographystyle{plain} 
   \bibliography{../../../../../bibliography/bibliography}
   
   Slide 3: Joan Mir{\'o} (1968). Landscape. Acrylic on canvas. Fundaci{\'o}n Joan Mir{\'o}, Barcelona. \url{https://www.fmirobcn.org/en/colection/catalog-works/5442/p-landscape-p}
