@@ -207,7 +207,11 @@
   \frametitle{Data formats}
   
   \begin{itemize}
-  \item 
+  \item Serialized representation of data
+  \item Comma separated values (CSV) is a common format
+  \item JPEG, TIFF, PNG, GIF for raster images
+  \item SVG, EPS, PDF for vector graphics
+  \item NetCDF, HDF5 for array scientific data
   \end{itemize}
 \end{frame}
 
@@ -215,7 +219,19 @@
   \frametitle{Data models}
   
   \begin{itemize}
-  \item 
+  \item Abstract formalization of objects and relationships in a domain
+  \begin{itemize}
+    \item There are lakes, rivers, and mountains
+    \item Lakes and rivers have a depth
+    \item Mountains have an elevation
+    \item Rivers have a length
+  \end{itemize}
+  \item Set of concepts used to define formalizations
+  \begin{itemize}
+    \item Entity-relationship data model
+    \item Graph data model
+    \item Geographic data model
+  \end{itemize}
   \end{itemize}
 \end{frame}
 
@@ -223,15 +239,46 @@
   \frametitle{Standards}
   
   \begin{itemize}
-  \item 
+  \item Heterogeneity in data models and standards hinders interoperability
+  \item Characteristic of system to work with other systems
+  \end{itemize}
+  \begin{center}
+    \includegraphics[scale=0.5]{graphics/compatibility.png}\hspace{0.5cm}
+    \includegraphics[scale=0.47]{graphics/de-facto-standard.png}\hspace{0.5cm}
+    \includegraphics[scale=0.31]{graphics/interoperability.png}\\
+    \tiny\url{definition-interoperabilite.info}
+  \end{center}
+  \begin{itemize}
+  \item Syntactic and semantic interoperability
+  \item If you can use (de facto) standard, recommendation, wide acceptance
+  \item Examples
+    \begin{itemize}
+    \item ISO Date and time format, Country codes, Geographic information
+    \item W3C HTML, XML, RDF
+    \item IETF TCP/IP, URI
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
+% Descriptive metadata describes a resource for purposes such as discovery and identification. It can include elements such as title, abstract, author, and keywords.
+% Structural metadata is metadata about containers of data and indicates how compound objects are put together, for example, how pages are ordered to form chapters. It describes the types, versions, relationships and other characteristics of digital materials.
+% Administrative metadata provides information to help manage a resource, such as when and how it was created, file type and other technical information, and who can access it.
 \begin{frame}
   \frametitle{Metadata}
   
   \begin{itemize}
-  \item 
+  \item Metadata is data about other data
+  \item Metadata describes, explains, locates data
+  \item Supports discovery, retrieval, use, management of data
+%  \item Descriptive, structural, administrative metadata
+  \item May be created manually or automatically
+  \item What is data for someone may be metadata for someone else
+  \item Examples
+  \begin{itemize}
+    \item Data about observational data, e.g. about sensor and property
+    \item Data about published data, e.g. title, authors, identifiers
+    \item Phone call content vs. phone number, call duration
+  \end{itemize}
   \end{itemize}
 \end{frame}
 
