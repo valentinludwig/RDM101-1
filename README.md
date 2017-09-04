@@ -1,6 +1,6 @@
 # Introduction to Research Data Management 
 
-These materials were prepared for the [4th ArcTrain Annual Meeting](https://www.marum.de/en/education-career/ArcTrain-2/Annual-Meeting-2017.html). The course was first held on September 12 and 13, 2017 and is structured three blocks of lectures and exercises. The schedule is as follows:
+These materials were prepared for the [4th ArcTrain Annual Meeting](https://www.marum.de/en/education-career/ArcTrain-2/Annual-Meeting-2017.html). The course was first held on September 12 and 13, 2017 and is structured in three blocks of lectures and exercises. The schedule is as follows:
   
 
 09:00 - 09:15 Welcome and Overview  
