@@ -89,7 +89,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Find data}
+  \frametitle{Find Data}
   
   \begin{itemize}
   \item Useful data can find found in a lot of places
@@ -125,7 +125,7 @@
 }
 
 \begin{frame}
-  \frametitle{Retrieve data}
+  \frametitle{Retrieve Data}
   
   \begin{itemize}
   \item Typically download of one or more files
@@ -148,7 +148,7 @@
 }
 
 \begin{frame}
-  \frametitle{Reuse data}
+  \frametitle{Reuse Data}
   
   \begin{itemize}
   \item Complicated!
@@ -175,7 +175,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Curating and storing Data}
+  \frametitle{Curating and Storing Data}
   
   \begin{itemize}
   \item As a result of processing, you'll produce new data
@@ -191,16 +191,89 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}
+{
+	\usebackgroundtemplate{ %
+		\begin{tikzpicture}[remember picture, overlay]%
+		\node[at=(current page.south east), anchor=south east,inner sep=20pt]  {\includegraphics[scale=0.2]{graphics/postgresql.png}};%
+		\end{tikzpicture}%
+	}%
+	\setbeamertemplate{navigation symbols}{}
+	\begin{frame}[plain]
+	  \frametitle{Databases}
+	  
+	  \begin{itemize}
+	  \item Many kinds but relational most common
+	  \item Help structuring data, be consistent with datatypes
+	  \item Flexible data retrieval with declarative language (SQL)
+	  \item Access to data from programming languages (Python, R, Java, ...)
+	  \item Processing of large data quantities
+	  \item Access management and security
+	  \item Backup and replication
+	  \end{itemize}
+	\end{frame}
+}
+
+\begin{frame}[fragile]
   \frametitle{Databases}
   
-  \begin{itemize}
-  \item
-  \end{itemize}
+  \small
+  \begin{verbatim}
+  create table data (
+    id integer primary key, 
+    time timestamp, 
+    latitude double precision, 
+    longitude double precision, 
+    temperature double precision
+  )
+  \end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Databases}
+  
+  \small
+  \begin{verbatim}
+  insert into data values(
+    1, 
+    timestamp '2016-07-26 00:00:00', 
+    -70.650000, 
+    -8.250000, 
+    -19.3
+  )
+  \end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Databases}
+  
+  \small
+  \begin{verbatim}
+  select 
+    id, time, latitude, longitude, temperature
+  from data
+  
+  select * from data where temperature < -15
+  
+  
+  
+   id |        time         | latitude | longitude | temperature 
+  ----+---------------------+----------+-----------+-------------
+    1 | 2016-07-26 00:00:00 |   -70.65 |     -8.25 |       -19.3 
+  \end{verbatim}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Versioning and Backup}
+  \frametitle{Backup and Versioning}
+  
+  \begin{itemize}
+  \item Your (Word) manuscripts are data
+  \item Backup your data as you backup your manuscripts
+  \item Avoid memory sticks as backup media
+  \item Test your backup strategy: can you recover lost files?
+  \item Make sure to version your data
+  \item Including if you collaborate only with yourself
+  \item Remote version control can act as backup
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
