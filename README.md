@@ -26,13 +26,13 @@ The [first lecture](lectures/lecture-I/stocker17rdm101-lecture-I.pdf) introduces
 
 ## Lecture: Working with Research Data
 
-The [second lecture](lectures/lecture-II/stocker17rdm101-lecture-II.pdf) discusses aspects of working with research data, such as ways to access data and technologies to store and version data.
+The [second lecture](lectures/lecture-II/stocker17rdm101-lecture-II.pdf) discusses aspects of working with research data, such finding and accessing data, data retrieval and reuse, relational databases and other technologies used to store and version data.
 
 ## Exercise: Versioning Data with GitHub
 
 ## Lecture: Sharing and Archiving Research Data
 
-Benefits, Challenges, Identification, Citation, Repositories, Quality, Preservation, Discovery, ...
+The [third lecture](lectures/lecture-III/stocker17rdm101-lecture-III.pdf) explores drivers behind the Open Data movement, discusses some of the benefits and challenges of sharing data, issues such as data identification and citation, the role of data repositories.
 
 ## Exercise: Archiving data with figshare and PANGAEA
 
