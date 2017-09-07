@@ -50,6 +50,50 @@ The [second lecture](lectures/lecture-II/stocker17rdm101-lecture-II.pdf) discuss
 
 ## Exercise: Versioning Data with GitHub
 
+Git supports collaborative work on documents, typically software source code but it can be for any (text) files including articles, slides, posters---or data files.
+
+To use Git, you need to [install Git](https://git-scm.com/downloads) on your computer and choose an online Git repository service. [GitHub](https://github.com/) is arguably the most popular. GitHub is free only for public projects, meaning that you need a paid plan if you want to manage your documents in private repositories. There are alternatives, including some that include private repositories in their free plan. [Bitbucket](https://bitbucket.org) is an example.
+
+The course material is managed in a [GitHub repository](https://github.com/markusstocker/RDM101). The repository also contains an [example data file](https://github.com/markusstocker/RDM101/data/example.csv). The goal in this exercise is to collaboratively make changes to this file.
+
+Let's create an account on [GitHub](https://github.com/). If you already have an account, sign in. Next, fork the course material repository to your account.
+
+*Hint: Look for the `Fork` buttom on the top-right.*
+
+This will "create a copy" of the lecture course material into your GitHub account.
+
+In order to make changes, you need to clone the forked repository to your computer with the following command (substitute [YOUR_ACCOUNT_NAME] accordingly):
+
+```
+git clone https://github.com/[YOUR_ACCOUT_NAME]/RDM101.git
+
+```
+
+*Hint: On Windows you need to start a Git Bash.*
+
+Now you can navigate into the RDM101/data folder and edit the `example.csv` data file. Try to change a temperature value, and save the file.
+
+With the following command
+
+```
+git status
+```
+
+you are told about any changes in your working directory. You will see that the file `example.csv` has been modified. You can not commit this change and push it to GitHub, using the following commands
+
+```
+git commit -a -m "modified temperature value"
+git push
+```
+
+In order to push, you need to provide your GitHub username and password.
+
+Now, check the latest commit on GitHub. *Hint: Look for the latest commit id.* GitHub provides a good overview of the changes you made.
+
+As you have corrected the data, you now want to inform the source to pull the change so that it can be integrated. For this, go to the Pull requests tab. The change can be merged; you can simple create the pull request. The source is then notified and can merge the change.
+
+Naturally, GitHub repositories can have collaborators, which can be managed under settings. This is a way to give your collaborators rights to push and pull changes directly from your repository, thus bypassing pull requests.
+
 ## Lecture: Sharing and Archiving Research Data
 
 The [third lecture](lectures/lecture-III/stocker17rdm101-lecture-III.pdf) explores drivers behind the Open Data movement, discusses some of the benefits and challenges of sharing data, issues such as data identification and citation, the role of data repositories.
