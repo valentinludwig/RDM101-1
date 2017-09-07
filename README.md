@@ -24,6 +24,26 @@ The [first lecture](lectures/lecture-I/stocker17rdm101-lecture-I.pdf) introduces
 
 ## Exercise: Creating a Data Management Plan with DMPonline
 
+[DMPonline](https://dmponline.dcc.ac.uk/) is a tool by the UK [Digital Curation Centre](http://www.dcc.ac.uk/) and the [University of California Curation Center](http://www.cdlib.org/uc3/) that supports you in creating, reviewing, and sharing data management plans that meet institutional and funder requirements.
+
+First, create an account. If your organization is not listed, choose 'Other' and add the name of your organization, e.g. 'University of Bremen'. Once signed in, you can edit your profile. Do you have an ORCID iD? You can link it to your DMPonline profile.
+
+The main page shows your plans, including plans that have been shared with you.
+
+Let's create a plan. You'll need to answer a few questions so that DMPonline can setup the DMP template. Select the 'European Commission (Horizon 2020)' as funding organisation.
+
+Note: Projects that participate in the [Horizon 2020 Open Research Data Pilot](https://www.openaire.eu/opendatapilot) are required to develop a Data Management Plan. Projects starting from January 2017 are by default part of the Open Data Pilot. See also the [Guidelines to the Rules on Open Access to Scientific Publications and Open Access to Research Data in Horizon 2020](http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-pilot-guide_en.pdf).
+
+On the first page (Plan details) you find instructions on the Initial DMP, Detailed DMP and Final review DMP. The Initial DMP must be submitted (as a deliverable) within the first 6 months of the project. The Detailed DMP is meant to capture finer details and updates as the project progresses. The Final review DMP is meant for the final project review and may be suitable also for intermediate reviews. Scroll through the sections and see what kind of questions are asked.
+
+Select the Initial DMP tab and provide some answers to the questions. As you answer questions, you will see the progress bar updating itself. DMPonline also records the time and the person that answered the question.
+
+DMPonline supports the export of DMPs in various formats, including PDF. Try this functionality for your Initial DMP.
+
+Explore the differences between the Initial DMP and the Detailed DMP (and Final review DMP).
+
+DMPonline also support sharing DMPs with your collaborators. This is a useful functionality. Try to share your DMP with a fellow student. You will need her email and you can set permissions.
+
 ## Lecture: Working with Research Data
 
 The [second lecture](lectures/lecture-II/stocker17rdm101-lecture-II.pdf) discusses aspects of working with research data, such finding and accessing data, data retrieval and reuse, relational databases and other technologies used to store and version data.
