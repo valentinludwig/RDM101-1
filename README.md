@@ -32,7 +32,7 @@ The main page shows your plans, including plans that have been shared with you.
 
 Let's create a plan. You'll need to answer a few questions so that DMPonline can setup the DMP template. Select the 'European Commission (Horizon 2020)' as funding organisation.
 
-Note: Projects that participate in the [Horizon 2020 Open Research Data Pilot](https://www.openaire.eu/opendatapilot) are required to develop a Data Management Plan. Projects starting from January 2017 are by default part of the Open Data Pilot. See also the [Guidelines to the Rules on Open Access to Scientific Publications and Open Access to Research Data in Horizon 2020](http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-pilot-guide_en.pdf).
+> Projects that participate in the [Horizon 2020 Open Research Data Pilot](https://www.openaire.eu/opendatapilot) are required to develop a Data Management Plan. Projects starting from January 2017 are by default part of the Open Data Pilot. See also the [Guidelines to the Rules on Open Access to Scientific Publications and Open Access to Research Data in Horizon 2020](http://ec.europa.eu/research/participants/data/ref/h2020/grants_manual/hi/oa_pilot/h2020-hi-oa-pilot-guide_en.pdf).
 
 On the first page (Plan details) you find instructions on the Initial DMP, Detailed DMP and Final review DMP. The Initial DMP must be submitted (as a deliverable) within the first 6 months of the project. The Detailed DMP is meant to capture finer details and updates as the project progresses. The Final review DMP is meant for the final project review and may be suitable also for intermediate reviews. Scroll through the sections and see what kind of questions are asked.
 
