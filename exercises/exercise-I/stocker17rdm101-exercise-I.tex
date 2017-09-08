@@ -1,0 +1,66 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usecolortheme{sidebartab}
+
+\usepackage{hyperref}
+\usepackage{showexpl} 
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage[version=3]{mhchem}
+\usepackage{chemfig}
+\usepackage{changes}
+\usepackage[many]{tcolorbox}
+\usepackage{natbib}
+\bibliographystyle{unsrtnat}
+\setcitestyle{square,numbers}
+
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}{}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+\lstloadlanguages{[LaTeX]Tex} 
+\lstset{% 
+     basicstyle=\ttfamily\large, 
+     commentstyle=\itshape\ttfamily, 
+     showspaces=false, 
+     showstringspaces=false, 
+     breaklines=true, 
+     breakautoindent=false, 
+     captionpos=t,
+     explpreset={numbers=none},
+     pos=b
+} 
+
+\newtcolorbox{titlebox}[1][]{
+	width=1.2\textwidth,
+	boxrule=0pt,
+	leftrule=0pt,
+	rightrule=0pt,
+	toprule=0pt,
+	bottomrule=0pt,
+	arc=0pt,
+	colback=yellow!20,
+	opacityback=0.7,
+	enhanced jigsaw
+}
+
+\begin{document}
+
+\begin{frame}
+  \frametitle{Exercise I}
+  
+  \begin{itemize}
+  \item Go to https://dmponline.dcc.ac.uk/
+  \item Create an account and sign in
+  \item Create a new DMP using the Horizon 2020 template
+  \item Read through the instructions
+  \item Create an Initial DMP by answering some of the questions
+  \item Export your Initial DMP as PDF
+  \item What are the differences between Initial and Detailed DMP?
+  \item Share your DMP with a fellow student
+  \end{itemize}
+\end{frame}
+
+\end{document}
