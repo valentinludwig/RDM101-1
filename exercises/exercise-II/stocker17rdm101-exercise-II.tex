@@ -1,0 +1,67 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usecolortheme{sidebartab}
+
+\usepackage{hyperref}
+\usepackage{showexpl} 
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage[version=3]{mhchem}
+\usepackage{chemfig}
+\usepackage{changes}
+\usepackage[many]{tcolorbox}
+\usepackage{natbib}
+\bibliographystyle{unsrtnat}
+\setcitestyle{square,numbers}
+
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}{}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+\lstloadlanguages{[LaTeX]Tex} 
+\lstset{% 
+     basicstyle=\ttfamily\large, 
+     commentstyle=\itshape\ttfamily, 
+     showspaces=false, 
+     showstringspaces=false, 
+     breaklines=true, 
+     breakautoindent=false, 
+     captionpos=t,
+     explpreset={numbers=none},
+     pos=b
+} 
+
+\newtcolorbox{titlebox}[1][]{
+	width=1.2\textwidth,
+	boxrule=0pt,
+	leftrule=0pt,
+	rightrule=0pt,
+	toprule=0pt,
+	bottomrule=0pt,
+	arc=0pt,
+	colback=yellow!20,
+	opacityback=0.7,
+	enhanced jigsaw
+}
+
+\begin{document}
+
+\begin{frame}
+  \frametitle{Exercise II}
+  
+  \begin{itemize}
+  \item Download and install Git and create a GitHub account
+  \item Fork the course material into your account
+  \item Clone the repository from your account onto your computer
+  \item Make a change to RDM101/data/example.csv
+  \item Commit and push the change
+  \item Submit a pull request
+  \item Add a fellow student as a collaborator to the your repository
+  \item Make individual changes, commit and push them
+  \item Update your working directory by pulling changes
+  \end{itemize}
+\end{frame}
+
+\end{document}
