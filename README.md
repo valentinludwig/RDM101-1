@@ -50,7 +50,7 @@ The [second lecture](lectures/lecture-II/stocker17rdm101-lecture-II.pdf) discuss
 
 ## Exercise: Versioning Data with GitHub
 
-Git supports collaborative work on documents, typically software source code but it can be for any (text) files including articles, slides, posters---or data files.
+Git supports collaborative work on documents, typically software source code but it can be any (text) file including articles, slides, posters---or data files.
 
 To use Git, you need to [install Git](https://git-scm.com/downloads) on your computer and choose an online Git repository service. [GitHub](https://github.com/) is arguably the most popular. GitHub is free only for public projects, meaning that you need a paid plan if you want to manage your documents in private repositories. There are alternatives, including some that include private repositories in their free plan. [Bitbucket](https://bitbucket.org) is an example.
 
@@ -60,7 +60,7 @@ Let's create an account on [GitHub](https://github.com/). If you already have an
 
 *Hint: Look for the `Fork` buttom on the top-right.*
 
-This will "create a copy" of the lecture course material into your GitHub account.
+This will create a copy of the lecture course material into your GitHub account.
 
 In order to make changes, you need to clone the forked repository to your computer with the following command (substitute [YOUR_ACCOUNT_NAME] accordingly):
 
@@ -79,7 +79,7 @@ With the following command
 git status
 ```
 
-you are told about any changes in your working directory. You will see that the file `example.csv` has been modified. You can not commit this change and push it to GitHub, using the following commands
+you are told about any changes in your working directory. You will see that the file `example.csv` has been modified. You can now commit this change and push it to GitHub, using the following commands
 
 ```
 git commit -a -m "modified temperature value"
@@ -92,7 +92,11 @@ Now, check the latest commit on GitHub. *Hint: Look for the latest commit id.* G
 
 As you have corrected the data, you now want to inform the source to pull the change so that it can be integrated. For this, go to the Pull requests tab. The change can be merged; you can simple create the pull request. The source is then notified and can merge the change.
 
-Naturally, GitHub repositories can have collaborators, which can be managed under settings. This is a way to give your collaborators rights to push and pull changes directly from your repository, thus bypassing pull requests.
+Naturally, GitHub repositories can have collaborators, which can be managed under settings. This is a way to give your collaborators rights to push and pull changes directly from your repository, thus bypassing pull requests. With the following command you can updated your working directory to include changes others may have pushed
+
+```
+git pull
+```
 
 ## Lecture: Sharing and Archiving Research Data
 
