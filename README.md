@@ -38,11 +38,11 @@ On the first page (Plan details) you find instructions on the Initial DMP, Detai
 
 Select the Initial DMP tab and provide some answers to the questions. As you answer questions, you will see the progress bar updating itself. DMPonline also records the time and the person that answered the question.
 
-DMPonline supports the export of DMPs in various formats, including PDF. Try this functionality for your Initial DMP.
+DMPonline supports the export of DMPs in various formats, including PDF. Try this functionality with your Initial DMP.
 
 Explore the differences between the Initial DMP and the Detailed DMP (and Final review DMP).
 
-DMPonline also support sharing DMPs with your collaborators. This is a useful functionality. Try to share your DMP with a fellow student. You will need her email and you can set permissions.
+DMPonline also supports sharing DMPs with your collaborators. This is a useful functionality. Try to share your DMP with a fellow student. You will need the email. Note the permission setting.
 
 ## Lecture: Working with Research Data
 
