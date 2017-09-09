@@ -92,9 +92,9 @@
   \frametitle{Find Data}
   
   \begin{itemize}
-  \item Useful data can find found in a lot of places
-  \item Online or offline, e.g. printed books (increasingly uncommon)
-  \item In data repositories or as files on a web server
+  \item Useful data can be found in a lot of places
+  \item Online or offline, e.g. printed books
+  \item In data repositories or as files on a server
   \item You could try a Google search
   \item Or ask your supervisor and fellow students
   \item The authors of papers you read may cite data and/or sources
@@ -154,9 +154,10 @@
   \item Complicated!
   \item Generally substantial processing needed to make reuse possible
   \item Even if accessible, data are generally not interoperable
-  \item Little syntactic interoperability due to different formats
-  \item Little semantic interoperability due to different terminology
-  \item Data quality may not be adequate
+  \item Lack syntactic interoperability due to different formats
+  \item Lack semantic interoperability due to different terminology
+  \item Data and metadata quality may not be adequate
+  \item Different resolution, gaps, outliers, insufficient information, ...
   \item Data need to be integrated: common syntax and semantics
   \item A lot of time required to prepare for reuse
   \end{itemize}
@@ -171,6 +172,8 @@
   \item Staggering amount of methods
   \item Programming (scripting) languages
   \item Computational environments and other tools
+  \item Processing results in new (derived) data
+  \item Various kinds of processing, transformation, interpretation, ...
   \end{itemize}
 \end{frame}
 
@@ -178,11 +181,9 @@
   \frametitle{Curating and Storing Data}
   
   \begin{itemize}
-  \item As a result of processing, you'll produce new data
   \item Data need to be identified, described, quality controlled, etc.
   \item Curated data are stored and possibly preserved
-  \item How you curate and store data depends on various factors
-  \item Example factors
+  \item How you curate and store data depends on various factors, e.g.
   \begin{itemize}
   \item Longevity: from temporary to preserved data
   \item Sharing: with yourself or a community
@@ -218,13 +219,13 @@
   
   \small
   \begin{verbatim}
-  create table data (
-    id integer primary key, 
-    time timestamp, 
-    latitude double precision, 
-    longitude double precision, 
-    temperature double precision
-  )
+create table data (
+  id integer primary key, 
+  time timestamp, 
+  latitude double precision, 
+  longitude double precision, 
+  temperature double precision
+)
   \end{verbatim}
 \end{frame}
 
@@ -233,13 +234,13 @@
   
   \small
   \begin{verbatim}
-  insert into data values(
-    1, 
-    timestamp '2016-07-26 00:00:00', 
-    -70.650000, 
-    -8.250000, 
-    -19.3
-  )
+insert into data values(
+  1, 
+  timestamp '2016-07-26 00:00:00', 
+  -70.650000, 
+  -8.250000, 
+  -19.3
+)
   \end{verbatim}
 \end{frame}
 
@@ -248,17 +249,40 @@
   
   \small
   \begin{verbatim}
-  select 
-    id, time, latitude, longitude, temperature
-  from data
+select 
+  id, time, latitude, longitude, temperature
+from data
   
-  select * from data where temperature < -15
+select * from data where temperature < -15
   
   
   
-   id |        time         | latitude | longitude | temperature 
-  ----+---------------------+----------+-----------+-------------
-    1 | 2016-07-26 00:00:00 |   -70.65 |     -8.25 |       -19.3 
+  id |        time         | latitude | longitude | temperature 
+----+---------------------+----------+-----------+-------------
+   1 | 2016-07-26 00:00:00 |   -70.65 |     -8.25 |       -19.3 
+  \end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{From Python}
+  
+  \small
+  \begin{verbatim}
+import pyodbc
+
+con = pyodbc.connect('DRIVER=...;SERVER=...;PORT=...;
+                      DATABASE=...;UID=...;PWD=...')
+cur = con.cursor()
+
+cur.execute('select latitude, longitude, temperature 
+             from data where temperature < -15')
+
+for row in cur.fetchall():
+print('Latitute: {}; Longitude: {}; Temperature: {}'
+      .format(row[0], row[1], row[2])
+
+cur.close()
+con.close()
   \end{verbatim}
 \end{frame}
 
@@ -267,7 +291,7 @@
   
   \begin{itemize}
   \item Your (Word) manuscripts are data
-  \item Backup your data as you backup your manuscripts
+  \item Backup your other data as you backup your manuscripts
   \item Avoid memory sticks as backup media
   \item Test your backup strategy: can you recover lost files?
   \item Make sure to version your data
