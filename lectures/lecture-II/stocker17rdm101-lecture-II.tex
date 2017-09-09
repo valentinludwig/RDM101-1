@@ -67,7 +67,7 @@
   \begin{itemize}
   \item Increasing in number and quality
   \item Adopting principles, guidelines, standards
-  \item Supporting human and programmatic access
+%  \item Supporting human and programmatic access
   \end{itemize}
   \end{itemize}
 \end{frame}
@@ -98,7 +98,7 @@
   \item You could try a Google search
   \item Or ask your supervisor and fellow students
   \item The authors of papers you read may cite data and/or sources
-  \item Specialized search, e.g. Registry of Research Data Repositories
+%  \item Specialized search, e.g. Registry of Research Data Repositories
   \end{itemize}
 \end{frame}
 
@@ -209,7 +209,7 @@
 	  \item Access to data from programming languages (Python, R, Java, ...)
 	  \item Processing of large data quantities
 	  \item Access management and security
-	  \item Backup and replication
+	  \item Backup
 	  \end{itemize}
 	\end{frame}
 }
@@ -278,8 +278,8 @@ cur.execute('select latitude, longitude, temperature
              from data where temperature < -15')
 
 for row in cur.fetchall():
-print('Latitute: {}; Longitude: {}; Temperature: {}'
-      .format(row[0], row[1], row[2])
+  print('Latitute: {}; Longitude: {}; Temperature: {}'
+        .format(row[0], row[1], row[2])
 
 cur.close()
 con.close()
