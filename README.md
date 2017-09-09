@@ -100,7 +100,7 @@ git pull
 
 ## Lecture: Sharing and Archiving Research Data
 
-The [third lecture](lectures/lecture-III/stocker17rdm101-lecture-III.pdf) explores drivers behind the Open Data movement, discusses some of the benefits and challenges of sharing data, issues such as data identification and citation, the role of data repositories.
+The [third lecture](lectures/lecture-III/stocker17rdm101-lecture-III.pdf) explores drivers behind the Open Data movement, discusses some of the benefits and challenges of sharing data, issues such as data identification and citation, and the role of data repositories.
 
 ## Exercise: Archiving data with figshare and PANGAEA
 
