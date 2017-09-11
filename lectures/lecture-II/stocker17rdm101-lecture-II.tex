@@ -158,8 +158,8 @@
   \item Lack semantic interoperability due to different terminology
   \item Data and metadata quality may not be adequate
   \item Different resolution, gaps, outliers, insufficient information, ...
-  \item Data need to be integrated: common syntax and semantics
-  \item A lot of time required to prepare for reuse
+%  \item Data need to be integrated: common syntax and semantics
+%  \item A lot of time required to prepare for reuse
   \end{itemize}
 \end{frame}
 
@@ -185,9 +185,9 @@
   \item Curated data are stored and possibly preserved
   \item How you curate and store data depends on various factors, e.g.
   \begin{itemize}
-  \item Longevity: from temporary to preserved data
-  \item Sharing: with yourself or a community
-  \item Dynamism: from static files to queriable databases
+  \item Longevity: temporary vs. preserved data
+  \item Sharing: yourself vs. community
+  \item Dynamism: static files vs. streamed data
   \end{itemize}
   \end{itemize}
 \end{frame}
@@ -258,7 +258,7 @@ select * from data where temperature < -15
   
   
   id |        time         | latitude | longitude | temperature 
-----+---------------------+----------+-----------+-------------
+ ----+---------------------+----------+-----------+-------------
    1 | 2016-07-26 00:00:00 |   -70.65 |     -8.25 |       -19.3 
   \end{verbatim}
 \end{frame}
@@ -292,9 +292,9 @@ con.close()
   \begin{itemize}
   \item Your (Word) manuscripts are data
   \item Backup your other data as you backup your manuscripts
-  \item Avoid memory sticks as backup media
+%  \item Avoid memory sticks as backup media
   \item Test your backup strategy: can you recover lost files?
-  \item Make sure to version your data
+  \item Consider to version your data
   \item Including if you collaborate only with yourself
   \item Remote version control can act as backup
   \end{itemize}
@@ -303,6 +303,13 @@ con.close()
 \begin{frame}
   \frametitle{Take aways}
   
+  \begin{itemize}
+    \item Reusing data depends on publishing, finding and access
+    \item They all have their challenges
+    \item Preparing data for reuse is generally laborious
+    \item Don't forget curation, storage beyond research project
+    \item Remember backup, versioning, even to collaborate with yourself
+  \end{itemize}
 \end{frame}
 
 \end{document}
